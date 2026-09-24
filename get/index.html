@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MustSee — City Trip Planner</title>
+<meta name="robots" content="noindex">
+<style>
+body{margin:0;font-family:-apple-system,Helvetica,Arial,sans-serif;background:#EEE6DA;color:#2B2420;text-align:center;padding:64px 24px}
+h1{font-size:28px;margin:0 0 8px}p{color:#6b625b;margin:0 0 24px;line-height:1.5}
+button{background:#C8563A;color:#fff;border:0;font-weight:700;padding:16px 28px;border-radius:999px;font-size:18px}
+small{display:block;margin-top:24px;color:#8a817a}
+</style>
+</head>
+<body>
+<h1>MustSee</h1>
+<p>Pick a city, tap once, get a full day: must-see places, lunch and dinner, walking times and a map. 74 cities, works offline.</p>
+<button id="go">Get MustSee for iPhone</button>
+<small>Free · iPhone &amp; iPad</small>
+<script>
+var u=["https://apps.","apple.com/app/apple-store/id6807343436","?pt=129392124&ct=ig-ad-a-sep26&mt=8"].join("");
+document.getElementById("go").onclick=function(){location.href=u;};
+if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){setTimeout(function(){location.href=u;},400);}
+</script>
+</body>
+</html>
